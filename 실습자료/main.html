@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>프로필 카드를 만들어 보자!</title>
+</head>
+<body>
+    <!-- 프로필 카드 내용 -->
+    <div class="profile-card">
+        <img src="profile.png" alt="Profile Picture" class="profile-img">
+        <h2 class="profile-name">이름</h2>
+        <p class="profile-title">안녕하세요</p>
+        <div class="image-upload">
+            <div class="upload-circle" style="background-image: url('example.jpg');" onclick="window.location.href='https://example.com/link1';"></div>
+            <div class="upload-circle" style="background-image: url('example.png');" onclick="window.location.href='https://example.com/link2';"></div>
+        </div>
+        <button class="profile-button" onclick="copyLink()">링크 복사 하기</button>
+        <div id="notification" class="notification">링크가 복사되었습니다!</div>
+    </div>
+    
+</body>
+
+<script src="styles.js"></script>
+
+</html>

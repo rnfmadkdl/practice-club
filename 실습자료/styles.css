@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background-color: #ecf0f3; /* 배경색 변경 */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 입체감 추가 */
+    width: 300px;
+    text-align: center;
+    padding: 40px; /* 세로 길이 증가 */
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 1.5em;
+    margin: 10px 0 5px 0;
+}
+
+.profile-title {
+    font-size: 1.2em;
+    color: gray;
+    margin-bottom: 20px; /* 제목과 작은 원 사이의 간격 추가 */
+}
+
+.image-upload {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0; /* 작은 원과 버튼 사이의 간격 추가 */
+}
+
+.upload-circle {
+    background-color: #e0e0e0; /* 원의 배경색 */
+    border-radius: 50%;
+    width: 40px; /* 원의 크기 */
+    height: 40px; /* 원의 크기 */
+    border: 2px dashed #007bff; /* 원의 테두리 */
+    background-size: cover; /* 이미지 크기 조정 */
+    background-position: center; /* 이미지 위치 조정 */
+    cursor: pointer; /* 마우스 포인터 변경 */
+    transition: background-color 0.3s;
+}
+
+.upload-circle:hover {
+    background-color: #d1e7ff; /* 호버 시 배경색 변경 */
+}
+
+.profile-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* 버튼과 원 사이의 간격 추가 */
+}
+
+.profile-button:hover {
+    background-color: #0056b3;
+}
+
+.notification {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed;
+    bottom: 20px; /* 화면 아래에서의 위치 */
+    left: 50%; /* 화면 중앙으로 위치 조정 */
+    transform: translateX(-50%); /* 중앙 정렬 */
+    background-color: #28a745; /* 배경색 */
+    color: white; /* 글자색 */
+    padding: 10px 20px; /* 패딩 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    z-index: 1000; /* 다른 요소 위에 표시 */
+    font-size: 14px; /* 글자 크기 */
+}
