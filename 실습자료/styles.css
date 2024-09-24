@@ -1,88 +1,88 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+    background-color: #f9f9f9; /* 배경색을 연한 회색으로 설정 */
+    display: flex; /* 플렉스 박스로 설정하여 중앙 정렬 */
+    justify-content: center; /* 가로축 중앙 정렬 */
+    align-items: center; /* 세로축 중앙 정렬 */
+    height: 100vh; /* 화면 전체 높이 설정 */
+    margin: 0; /* 페이지의 기본 마진 제거 */
 }
 
 .profile-card {
-    background-color: #ecf0f3; /* 배경색 변경 */
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 입체감 추가 */
-    width: 300px;
-    text-align: center;
-    padding: 40px; /* 세로 길이 증가 */
+    background-color: #ecf0f3; /* 프로필 카드의 배경색 설정 */
+    border-radius: 10px; /* 모서리를 둥글게 만듦 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 그림자를 추가하여 입체감 부여 */
+    width: 300px; /* 프로필 카드의 너비 설정 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    padding: 40px; /* 프로필 카드의 안쪽 여백을 늘려 세로 길이 증가 */
 }
 
 .profile-img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 15px;
+    border-radius: 50%; /* 이미지를 원형으로 자름 */
+    width: 100px; /* 이미지의 너비 설정 */
+    height: 100px; /* 이미지의 높이 설정 */
+    object-fit: cover; /* 이미지 비율을 유지하면서 크기 조정 */
+    margin-bottom: 15px; /* 이미지 아래에 여백 추가 */
 }
 
 .profile-name {
-    font-size: 1.5em;
-    margin: 10px 0 5px 0;
+    font-size: 1.5em; /* 프로필 이름의 글자 크기 설정 */
+    margin: 10px 0 5px 0; /* 위쪽에 *px, 아래쪽에 *px 여백 추가 */
 }
 
 .profile-title {
-    font-size: 1.2em;
-    color: gray;
-    margin-bottom: 20px; /* 제목과 작은 원 사이의 간격 추가 */
+    font-size: 1.2em; /* 프로필 직함의 글자 크기 설정 */
+    color: gray; /* 글자 색을 회색으로 설정 */
+    margin-bottom: 20px; /* 직함과 아래 요소 간의 간격 추가 */
 }
 
 .image-upload {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0; /* 작은 원과 버튼 사이의 간격 추가 */
+    display: flex; /* 플렉스 박스로 설정하여 작은 원들을 가로로 배치 */
+    justify-content: space-around; /* 작은 원들 간의 간격을 균등하게 배분 */
+    margin: 20px 0; /* 상하에 *px 여백 추가 */
 }
 
 .upload-circle {
-    background-color: #e0e0e0; /* 원의 배경색 */
-    border-radius: 50%;
-    width: 40px; /* 원의 크기 */
-    height: 40px; /* 원의 크기 */
-    border: 2px dashed #007bff; /* 원의 테두리 */
-    background-size: cover; /* 이미지 크기 조정 */
-    background-position: center; /* 이미지 위치 조정 */
-    cursor: pointer; /* 마우스 포인터 변경 */
-    transition: background-color 0.3s;
+    background-color: #e0e0e0; /* 작은 원의 기본 배경색 */
+    border-radius: 50%; /* 작은 원을 완전한 원형으로 만듦 */
+    width: 40px; /* 원의 너비 설정 */
+    height: 40px; /* 원의 높이 설정 */
+    border: 2px dashed #007bff; /* 점선 테두리와 색상 설정 */
+    background-size: cover; /* 배경 이미지의 크기를 원에 맞춰 조정 */
+    background-position: center; /* 배경 이미지의 위치를 중앙으로 설정 */
+    cursor: pointer; /* 마우스를 올렸을 때 포인터로 변경 */
+    transition: background-color 0.3s; /* 배경색 변경에 *초의 전환 효과 추가 */
 }
 
 .upload-circle:hover {
-    background-color: #d1e7ff; /* 호버 시 배경색 변경 */
+    background-color: #d1e7ff; /* 마우스를 올렸을 때 배경색을 연한 파란색으로 변경 */
 }
 
 .profile-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    margin-top: 20px; /* 버튼과 원 사이의 간격 추가 */
+    background-color: #007bff; /* 버튼의 배경색을 파란색으로 설정 */
+    color: white; /* 버튼 텍스트의 색상을 흰색으로 설정 */
+    padding: 10px 15px; /* 버튼의 상하 *px, 좌우 *px 여백 추가 */
+    border: none; /* 버튼의 기본 테두리를 제거 */
+    border-radius: 5px; /* 버튼의 모서리를 둥글게 설정 */
+    text-decoration: none; /* 텍스트 밑줄 제거 */
+    transition: background-color 0.3s; /* 배경색 전환 효과를 *초로 설정 */
+    margin-top: 20px; /* 버튼 위에 *px 여백 추가 */
 }
 
 .profile-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* 마우스를 올렸을 때 배경색을 더 어두운 파란색으로 변경 */
 }
 
 .notification {
-    display: none; /* 기본적으로 숨김 */
-    position: fixed;
-    bottom: 20px; /* 화면 아래에서의 위치 */
-    left: 50%; /* 화면 중앙으로 위치 조정 */
-    transform: translateX(-50%); /* 중앙 정렬 */
-    background-color: #28a745; /* 배경색 */
-    color: white; /* 글자색 */
-    padding: 10px 20px; /* 패딩 */
-    border-radius: 5px; /* 모서리 둥글게 */
-    z-index: 1000; /* 다른 요소 위에 표시 */
-    font-size: 14px; /* 글자 크기 */
+    display: none; /* 기본적으로 알림을 숨김 */
+    position: fixed; /* 화면의 특정 위치에 고정 */
+    bottom: 20px; /* 화면 아래에서 *px 위에 위치 */
+    left: 50%; /* 화면 가로의 중앙에 위치 */
+    transform: translateX(-50%); /* 가로축 중앙 정렬 */
+    background-color: #28a745; /* 알림의 배경색을 초록색으로 설정 */
+    color: white; /* 알림 텍스트 색상을 흰색으로 설정 */
+    padding: 10px 20px; /* 알림의 상하 *px, 좌우 *px 여백 설정 */
+    border-radius: 5px; /* 알림의 모서리를 둥글게 설정 */
+    z-index: 1000; /* 다른 요소보다 위에 표시되도록 우선순위 설정 */
+    font-size: 14px; /* 알림 텍스트의 글자 크기 설정 */
 }
